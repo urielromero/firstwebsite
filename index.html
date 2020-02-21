@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>My CSS Website</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    
+    
+    <body>
+        <nav>
+            <!--IDs are primarily used for JS identification-->
+            <ul class="topnav" id="dropdownClick">
+<!--                <a href="websitelink"-->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="topnav-right"><a href="#sign up">Sign Up</a>
+                </li>
+                <li class="topnav-right"><a href="#signin">Sign In</a>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" 
+                onclick="dropdownMenu()">&#9776;</a></li>
+                <!--When menu button is clicked call the function-->
+            </ul>
+        </nav>
+        
+        
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftSide-col">
+                        <h1 class="large">The Fundamentals</h1>
+                        <h1 class="large">Made for Developers</h1>
+                    </div>
+                    <form>
+                        <div class="leftSide-col">
+                        <h2>Username</h2>
+                            <input class="inputbox" name="username" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                            <input class="inputbox" name="password" type="text" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="rightSide-col ">
+                        <div class="videoContainer">
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/cpcG5mbSTnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        header sits on top pf container
+            it acts as container of its own-->
+        <header>
+            <h1 class="section2header">The Standars of Awesomeness</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+<!--                4+4+4 is 12 which gives three equal size cols-->
+                <div class="col-4">
+                    <div class="box">
+                       <div class="icon">
+                       <img  src="space_small-spaceship.png";>
+                       </div>
+                        <label>Explore the World 🌎</label>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                       <div class="icon">
+                       <img  src="space_small-spaceship.png";>
+                       </div>
+                        <label>Learn To Code 📲</label>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                       <div class="icon">
+                       <img  src="space_small-spaceship.png";>
+                       </div>
+                        <label>Build An Empire 🏛</label>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+<!--            NEW ROW-->
+                <div class="row">
+                    <div class="col-12">
+                        <button class="learnMore">Learn More</button>
+                    </div>
+                </div>
+        </div>
+<!--        page break-->
+        <hr>
+        <div class="container">
+            <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </article>
+            </div>
+<!--            col-7(top col) plus col-5 equals 12 or a whole col-->
+                <div class="col-5">
+                    <div class="wingIcon">
+                        <img src ="wing.png";>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footsy">
+            <div class="row">
+<!--                col-3 since we want 4 columns -->
+                <div class="col-3 footerMenu">
+                    <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                </div>
+                <div class="col-3 footerMenu">
+                    <h1>Products</h1>
+                        <ul>
+                            <li>Computers</li>
+                            <li>Ipads</li>
+                            <li>Macbooks</li>
+                        </ul>
+                </div>
+                <div class="col-3 footerMenu">
+                    <h1>Learn More</h1>
+                        <ul>
+                            <li>Developers</li>
+                            <li>Designers</li>
+                            <li>Hackers</li>
+                        </ul>
+                </div>
+                <div class="col-3 footerMenu">
+                    <h1>Support</h1>
+                        <ul>
+                            <li>Help</li>
+                            <li>FAQ</li>
+                            <li>Contact Us</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            /*functio will chnage list layout after menu button is clicked and stack them vertically for mobile use using the new characteristinc in topnav.responsive*/
+            function dropdownMenu(){
+                var x=document.getElementById("dropdownClick");
+                if(x.className==="topnav"){
+                    /*chnage topnav to topnav.responsive*/
+                    x.className +=" responsive";
+                }else{
+                    x.className="topnav"
+                }
+                
+            }
+        
+        
+        </script>
+    </body>
+</html>
+
+
+<!--CONTAINERS are able to stack themselves ie. labels,etc-->

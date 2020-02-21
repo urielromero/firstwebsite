@@ -1,0 +1,337 @@
+/*##############DEFAUTLS#########*/
+
+/*USE % for fleing in mobile use*/
+nav,
+header,
+footer{display: block;}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+article p{
+    font-size: 35px;
+    padding: 20px;
+    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;/*reset row*/
+    clear: both;/*clear any floats on elements*/
+    content: "";/*clear content*/
+}
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* An * selectes every element that exists*/
+*{
+    box-sizing: border-box;
+    
+}
+
+
+
+/*#############NAV BAR############*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color:#eee;
+    overflow: hidden;/*helps when screen is reduced to mobile and image is too big*/
+    margin:0;
+    padding:0;
+}
+
+ul.topnav li{
+    list-style: none;/*guarantees bullets are removed*/
+    float:left
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+    
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover{
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+/*###########CUSTOM STYLES############*/
+
+#section-1-gradient{
+    background: #076dff;
+    background: -webkit-linear-gradient(#076dff,#65a5ff);
+    
+}
+
+div.box{
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    /* horiz verti blurr radius*/
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+        0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+/*we specify img since we want to center it and not just center the wingicon class/div*/
+div.wingIcon img{
+    display: block;
+    margin: auto;
+    
+    box-shadow: -2px/*H*/ -2px/*V*/ 20px/*Blr*/ 2px/*Spread*/ rgba(0/*shdw*/,0/*bckg col*/,0/*box color*/,.15/*opacity*/), 2px 2px 18px 2px rgba(0,0,0,1);
+}
+
+
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+button.learnMore{
+    display: block;
+    margin: auto;
+}
+/*allows to flex size as screen changes*/
+div.icon{
+    width: 100%;
+}
+
+div.leftSide-col{
+margin-left: 30%    
+    
+    
+}
+div.rightSide-col{
+margin-left: 15% 
+    
+}
+
+/*Shadow on desktop view*/
+.videoContainer iframe{
+        box-shadow: 6px 3px 26px -1px rgba(0,0,0,0.56);
+    }
+
+h1.large{
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.section2header{
+font-size: 65px;
+text-align: center;
+}
+
+
+
+form h2{
+    color: #fff;
+    
+}
+/*apply charactsc to obj of type TEXT
+These are inherited into mobile styles view aka media query section*/
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+footer.footsy {
+    /*GRAY COLOR*/
+    background-color: #666;
+    padding-left: 10%;
+}
+
+
+footer.footsy h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+footer.footsy ul {
+    /*DELETE BULLETS*/
+    list-style: none;
+    text-align: left;
+    /*REMOVE LEFT PADDING FROM BLLTS */
+    padding-left: 0;
+}
+
+footer.footsy ul li{
+    font-size: 22px;
+    line-height: 1.5;
+    
+}
+
+/*###########MOBILE STYLES############*/
+/*MEDIA QUARY activated when screen is reduced to less tha 680 ox */
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    
+    /*working with ///menu button before its pressed down to keep on same place fter its pressed down*/
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive{
+        /*so list itesm dont move around*/
+        position: relative;
+    }
+    
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;/*cancels out previos float=left from ul.topnav li*/
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+        
+    }
+    
+    
+    h1.section2header{
+        font-size: 50px;
+    }
+    
+/*    Whenver mobile mode is acctive 
+    colum will be at 100% width and not 50 % as in desktop view*/
+    
+    article p {
+        font-size: 25px;
+    }
+    
+    .col-6, 
+    .col-4,
+    .col-7,
+    .col-5{
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.footerMenu{
+        width: 50%;
+        display: block;
+    }
+    
+    
+    div.box{
+        padding: 5px; /*overriders previous padding from desktop view*/
+        display: block;/*makes sure boxes stack on tio of eachother on mobile view*/
+    }
+    
+    /*add margin to container/element instead of actual img*/
+    div.wingIcon{
+        margin: 10px;
+    }
+    
+    /*we want specifically the img to be 100% wide on mobile view*/
+    div.wingIcon img{
+        width: 100%;
+        
+    }
+    
+/*    */
+    div.leftSide-col, div.rightSide-col{
+        margin: 15px;
+    }
+
+/*    width of white input box*/
+    input[type="text"]{
+        width: 350px;
+    }
+    
+/*    makes video iframe fit into column WITHOUT overlapping/overextending*/
+    .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;/*deletes scroll Bar*/
+        box-shadow: 6px 3px 26px -1px rgba(0,0,0,0.56);
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
