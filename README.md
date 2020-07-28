@@ -7,3 +7,8 @@ Here we see some of the main concepts of the named languages to structure and en
 This is a static one page website and no database has been connected.
 
 In future practices I will add more advance elements to a page such as: animations, a carousel and a database, among others. 
+
+Visit page at:
+
+https://urielromero.github.io/firstwebsite/
+
